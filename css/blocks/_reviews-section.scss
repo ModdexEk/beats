@@ -1,0 +1,17 @@
+.reviews-section {
+    position: relative;
+
+    &::after {
+        content: url(../../img/vector2.png);
+        position: absolute;
+        top: -22px;
+        left: 15%;
+    }
+
+    //&:before {
+    //   content: url(../../img/ellipse.png);
+    //    position: absolute;
+    //    bottom: -25px;
+    //    left: 15%;
+    //}
+}

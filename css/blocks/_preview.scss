@@ -1,0 +1,29 @@
+.preview {
+    background: url(../../img/beats.png) left 65% center no-repeat;
+    height: 100vh;
+    min-height: 650px;
+
+}
+
+.preview__title-section {
+    width: 40%;
+}
+.preview__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.preview__main-title {
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.preview__title-desc {
+    font-size: 21px;
+    margin-bottom: 50px;
+}

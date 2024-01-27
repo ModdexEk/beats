@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    line-height: 1.42;
+    color: #292929;
+    background: #F5F5F5;
+    position: relative;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: $containerWidth + 20px;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: $containerWidth;
+    margin: 0 auto;
+    padding: 24px 93px 50px;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
