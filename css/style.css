@@ -21,15 +21,15 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 1120px;
+  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 1100px;
+  width: 940px;
   margin: 0 auto;
-  padding: 24px 93px 50px;
+  padding: 24px 0 50px;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -276,6 +276,10 @@ img {
   text-align: center;
 }
 
+.benefit__image {
+  margin-bottom: 20px;
+}
+
 .benefit__image-wrapper {
   display: inline-block;
   width: 128px;
@@ -284,7 +288,6 @@ img {
   background: #F2F5F4;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 .benefit__icon {
@@ -364,12 +367,12 @@ img {
       -ms-flex: 1;
           flex: 1;
   margin-left: 37px;
+  margin-top: 30px;
 }
 
 .reviews__title {
   font-size: 24px;
   font-weight: 700;
-  margin-top: 30px;
   margin-bottom: 22px;
 }
 
@@ -480,6 +483,9 @@ img {
   display: flex;
   margin-bottom: 14px;
 }
+.form__row:last-child {
+  margin-bottom: 0;
+}
 
 .form__block {
   -webkit-box-flex: 1;
@@ -583,6 +589,9 @@ img {
 }
 .fixed-menu__item--active .fixed-menu__link:before {
   background: #E01F3D;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
 }
 
 .fixed-menu__link {
