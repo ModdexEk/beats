@@ -4,6 +4,12 @@
     justify-content: space-between;
 }
 
+.menu {
+    @include tablets {
+        display: none;
+    }
+}
+
 .menu__list {
     display: flex;
     align-items: center;
@@ -25,6 +31,12 @@
     font-size: rem(18px);
     display: flex;
     align-items: center;
+}
+
+.phone-number .header__phone-number {
+    @include tablets {
+        display: none;
+    }
 }
 
 .phone-number__icon-elem {

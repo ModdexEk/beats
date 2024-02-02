@@ -114,6 +114,12 @@ img {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +148,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .phone-number .header__phone-number {
+    display: none;
+  }
 }
 
 .phone-number__icon-elem {
