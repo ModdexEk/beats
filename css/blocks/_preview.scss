@@ -1,7 +1,7 @@
 .preview {
     background: url(../img/beats.png) left 75% center no-repeat;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
 
 }
 
@@ -16,14 +16,14 @@
 }
 
 .preview__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
     line-height: 1.1;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     text-transform: uppercase;
 }
 
 .preview__title-desc {
-    font-size: 21px;
-    margin-bottom: 50px;
+    font-size: rem(21px);
+    margin-bottom: rem(50px);
 }

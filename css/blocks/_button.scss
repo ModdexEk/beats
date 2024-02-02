@@ -1,6 +1,6 @@
 .button {
     font-weight: 700;
-    padding: 15px 41px;
+    padding: rem(15px) rem(41px);
     text-transform: uppercase;
     border-radius: 100px;
     line-height: 1;
@@ -27,5 +27,5 @@
 }
 
 .button__form {
-    height: 60px;
+    height: rem(60px);
 }
