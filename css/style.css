@@ -912,3 +912,22 @@ img {
   height: 4px;
   border-radius: 10px;
 }
+
+.contacts__container {
+  padding: 0;
+}
+
+.contacts-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url(../../img/map.png) center no-repeat;
+  background-color: white;
+}
+
+.footer {
+  background: white;
+}
