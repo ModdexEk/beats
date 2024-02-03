@@ -22,8 +22,15 @@
     &:last-child {
         padding-right: 0;
 
-        &::before {
+        &:before {
             display: none;
+        }
+    }
+
+    @include tablets {
+        padding: 0;
+        &::before {
+        display: none;
         }
     }
 }
