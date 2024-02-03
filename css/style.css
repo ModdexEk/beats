@@ -165,8 +165,15 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
+.menu {
+  padding-top: 8px;
+  margin: 0 1.875rem;
+}
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
@@ -180,10 +187,16 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu__item {
   margin-right: 0.9375rem;
+  margin-bottom: 0.625rem;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -191,6 +204,7 @@ img {
 
 .menu__link {
   font-size: 1.125rem;
+  white-space: nowrap;
 }
 
 .phone-number {
@@ -201,6 +215,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 9px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -213,6 +230,10 @@ img {
   width: 0.875rem;
   height: 0.875rem;
   margin-right: 0.375rem;
+}
+
+.phone-numder__text {
+  white-space: nowrap;
 }
 
 .features {
