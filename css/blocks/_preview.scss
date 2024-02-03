@@ -19,6 +19,16 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+
+        &::before {
+        
+            width: rem(323px);
+            height: rem(323px);
+            content: "";
+            background: url(../img/beats.png) center no-repeat;
+            background-size: cover;
+            margin-bottom: rem(60px);
+        }
     }
 }
 
@@ -41,9 +51,19 @@
     font-weight: 700;
     margin-bottom: rem(15px);
     text-transform: uppercase;
+
+    @include tablets {
+        padding: 0 5%;
+        margin-bottom: 0;
+    }
 }
 
 .preview__title-desc {
     font-size: rem(21px);
     margin-bottom: rem(50px);
+
+    @include tablets {
+        padding: 0 20%;
+        margin-bottom: rem(20px);
+    }
 }

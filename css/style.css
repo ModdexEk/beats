@@ -100,6 +100,14 @@ img {
             align-items: center;
     text-align: center;
   }
+  .preview__title-section::before {
+    width: 20.1875rem;
+    height: 20.1875rem;
+    content: "";
+    background: url(../img/beats.png) center no-repeat;
+    background-size: cover;
+    margin-bottom: 3.75rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -129,10 +137,22 @@ img {
   margin-bottom: 0.9375rem;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .preview__main-title {
+    padding: 0 5%;
+    margin-bottom: 0;
+  }
+}
 
 .preview__title-desc {
   font-size: 1.3125rem;
   margin-bottom: 3.125rem;
+}
+@media screen and (max-width: 768px) {
+  .preview__title-desc {
+    padding: 0 20%;
+    margin-bottom: 1.25rem;
+  }
 }
 
 .header {
@@ -233,6 +253,12 @@ img {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .button {
+    height: 3.75rem;
+    padding: 1.3125rem 2.5625rem;
+  }
 }
 .button:hover {
   background: #CA1B36;
@@ -627,6 +653,11 @@ img {
   position: fixed;
   top: 30%;
   right: 3%;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed-menu__item {

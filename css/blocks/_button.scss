@@ -8,6 +8,11 @@
     color: #fff;
     border: none;
     cursor: pointer;
+
+    @include tablets {
+        height: rem(60px);
+        padding: rem(21px) rem(41px);
+    }
    
     &:hover {
         background: #CA1B36;
