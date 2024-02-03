@@ -6,7 +6,7 @@
 }
 
 .menu {
-    padding-top: 8px;
+    padding-top: rem(8px);
     @include tablets {
         display: none;
     }
