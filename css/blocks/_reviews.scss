@@ -59,6 +59,9 @@
     flex: 1;
     margin-left: rem(37px);
     margin-top: rem(30px);
+    @include tablets {
+        margin-left: 0;
+    }
 }
 
 .reviews__title {
