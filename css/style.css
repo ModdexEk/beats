@@ -347,6 +347,7 @@ img {
 
 .headline {
   text-align: center;
+  margin-top: 1.25rem;
 }
 
 .headline__title {
@@ -916,6 +917,7 @@ img {
 .contacts__container {
   padding: 0;
   width: 100%;
+  position: relative;
 }
 @media screen and (max-width: 480px) {
   .contacts__container {
@@ -933,11 +935,14 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background: url(../../img/map.png) center no-repeat;
-  background-color: white;
 }
 
 .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -947,7 +952,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: white;
+  background: #fff;
   height: 5.375rem;
 }
 @media screen and (max-width: 480px) {

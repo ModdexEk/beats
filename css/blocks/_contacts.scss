@@ -1,6 +1,7 @@
 .contacts__container {
     padding: 0; 
     width: 100%;
+    position: relative;
 
     @include phones {
         flex-direction: column;
@@ -9,15 +10,18 @@
 .contacts-section {
     display: flex;
     justify-content: flex-end;
-    background: url(../../img/map.png ) center no-repeat;
-    background-color: white;
 }
 
 .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: white;
+    background: #fff;
     height: rem(86px);
 
     @include phones {
