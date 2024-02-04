@@ -915,6 +915,15 @@ img {
 
 .contacts__container {
   padding: 0;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .contacts__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .contacts-section {
@@ -929,5 +938,103 @@ img {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: white;
+  height: 5.375rem;
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 9.4375rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contacts__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.contacts__place {
+  font-size: 1.125rem;
+  line-height: 0.5;
+}
+@media screen and (max-width: 480px) {
+  .contacts__place {
+    margin-bottom: 0.625rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .phone-numder__text--footer {
+    font-size: 1rem;
+  }
+}
+
+.social {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 0.625rem;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.25rem;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.9375rem;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  fill: #B3B3B3;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+.social__icon:hover {
+  fill: black;
+}
+
+.social__link {
+  display: block;
 }
