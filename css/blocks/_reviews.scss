@@ -47,6 +47,10 @@
         height: rem(130px);
         margin-top: rem(15px);
     }
+
+    @include phones {
+        margin-top: 0;
+    }
 }
 
 .reviews__avatar-img {
