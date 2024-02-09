@@ -1057,3 +1057,43 @@ img {
 .social__link {
   display: block;
 }
+.sliders__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sliders__image {
+  width: 100%;
+  margin-right: 50px;
+}
+
+.sliders__photo {
+  width: 452px;
+  height: 452px;
+}
+
+.sliders__pic {
+  width: 452px;
+  height: 452px;
+}
+
+.desk {
+  width: 100%;
+}
+
+.slider__title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.slider__desc {
+  color: #666;
+}
