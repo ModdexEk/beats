@@ -1,9 +1,9 @@
 .burger{
     position: fixed;
-    top:20px;
+    top:rem(20px);
     right: 10%;
-    height: 25px;
-    width: 40px;
+    height: rem(25px);
+    width: rem(40px);
     cursor:pointer;
     z-index: 15;
     transition:all .4s;

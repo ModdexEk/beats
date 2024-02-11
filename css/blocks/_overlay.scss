@@ -8,8 +8,8 @@
     transition:all .4s;
 
     position:fixed;
-    top:0;
-    left:100%;
+    top:-100%;
+    left:0;
     opacity:0;
     width: 100%;
     height: 100%;
@@ -18,7 +18,7 @@
 
   .overlay__menu{
     &-item{
-      margin-bottom:20px;
+      margin-bottom:rem(20px);
       display:flex;
       flex-direction:column;
       align-items:center;
@@ -33,7 +33,7 @@
     }
 
     &-link{
-      font-size: 36px;
+      font-size: rem(36px);
       color:white;
       &:hover{
         color: #CA1B36;
@@ -43,7 +43,7 @@
   }
 
   .overlay--active{
-    left: 0;
+    top: 0;
     opacity:1;
   }
 
