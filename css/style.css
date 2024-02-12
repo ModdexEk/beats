@@ -1294,7 +1294,6 @@ img {
 @media screen and (max-width: 768px) {
   .sliders__price {
     font-size: 2.5rem;
-    margin-right: 2.1875rem;
   }
 }
 @media screen and (max-width: 480px) {
