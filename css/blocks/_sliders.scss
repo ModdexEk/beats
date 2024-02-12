@@ -6,6 +6,8 @@
     text-align: center;
     width: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -40,10 +42,7 @@
 
 .sliders {
     max-width: rem(940px);
-    margin-left: rem(30px);
-    @include tablets {
-        margin-left: 0;
-    }
+
 }
 
 
