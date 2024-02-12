@@ -1108,9 +1108,9 @@ img {
 }
 @media screen and (max-width: 768px) {
   .sliders__nav {
-    width: 28.75rem;
+    width: 22.5rem;
     left: 50%;
-    top: 28%;
+    top: 25%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
