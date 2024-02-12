@@ -25,7 +25,7 @@
     @include tablets {
         width: 80%;
         left: 50%;
-        top: 25%;
+        top: rem(170px);
         transform: translate(-50%, -50%);
     }
 }

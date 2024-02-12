@@ -1116,7 +1116,7 @@ img {
   .sliders__nav {
     width: 80%;
     left: 50%;
-    top: 25%;
+    top: 10.625rem;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
