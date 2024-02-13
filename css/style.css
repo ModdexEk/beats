@@ -1122,14 +1122,19 @@ img {
   }
 }
 
-.sliders__left {
+.button__slider {
   width: 1.5rem;
   height: 2.5rem;
+  background: none;
 }
 
-.sliders__right {
+.sliders__left, .sliders__right {
   width: 1.5rem;
   height: 2.5rem;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
 }
 
 .sliders {

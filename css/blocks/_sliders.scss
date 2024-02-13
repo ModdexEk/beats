@@ -30,21 +30,24 @@
     }
 }
 
-.sliders__left {
+.button__slider {
     width: rem(24px);
     height: rem(40px);
+    background: none 
 }
 
-.sliders__right {
+.sliders__left, .sliders__right {
     width: rem(24px);
     height: rem(40px);
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    border: none;
 }
 
 .sliders {
     max-width: rem(940px);
-
 }
-
 
 
 .sliders__item {
