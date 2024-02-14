@@ -647,16 +647,6 @@ img {
      object-fit: cover;
 }
 
-.reviews-section {
-  position: relative;
-}
-.reviews-section::after {
-  content: url(../img/vector2.png);
-  position: absolute;
-  top: -22px;
-  left: 15%;
-}
-
 .order-section {
   background: #181818;
   color: #fff;
@@ -1412,4 +1402,93 @@ img {
 
 .body--active-menu {
   overflow: hidden;
+}
+
+.team__title {
+  margin-bottom: 3.125rem;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__item {
+  width: 25%;
+}
+
+.team-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.625rem;
+}
+
+.team-card__photo {
+  width: 220px;
+  max-height: 290px;
+  overflow: hidden;
+  margin-bottom: 1.5625rem;
+}
+
+.team-card__name {
+  background: none;
+  border: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+  cursor: pointer;
+}
+.team-card__name:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  border: 6px solid transparent;
+  border-top: 9px solid #E01F3D;
+  border-bottom: none;
+  margin-left: 0.3125rem;
+}
+
+.team-card__value {
+  text-align: center;
+}
+
+.team-card__post {
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.team-card__charge {
+  color: #666;
+}
+
+.team-section {
+  position: relative;
+}
+.team-section:after {
+  position: absolute;
+  top: -12px;
+  right: 15%;
+  content: url(../img/square.png);
+}
+
+.slider-section {
+  position: relative;
+}
+.slider-section::after {
+  content: url(../img/vector2.png);
+  position: absolute;
+  top: -22px;
+  left: 15%;
 }

@@ -1,0 +1,11 @@
+.team-section {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        top: -12px;
+        right:15% ;
+        content: url(../img/square.png);
+    }
+
+}
