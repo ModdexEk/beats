@@ -518,6 +518,24 @@ img {
   top: -60px;
 }
 
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  min-height: 21.875rem;
+  margin-bottom: 0.9375rem;
+}
+
+.reviews__item {
+  position: absolute;
+  opacity: 0;
+}
+
+.activ {
+  opacity: 1;
+}
+
 .reviews__display-inner {
   display: -webkit-box;
   display: -ms-flexbox;

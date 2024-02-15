@@ -28,6 +28,22 @@
     }
 }
 
+.reviews__list {
+    display: flex;
+    position: relative;
+    min-height: rem(350px);
+    margin-bottom: rem(15px);
+}
+
+.reviews__item {
+    position: absolute;
+    opacity: 0;
+}
+
+.activ {
+    opacity: 1;
+}
+
 .reviews__display-inner {
     display: flex;
 
