@@ -526,6 +526,12 @@ img {
   min-height: 21.875rem;
   margin-bottom: 0.9375rem;
 }
+@media screen and (max-width: 768px) {
+  .reviews__list {
+    min-height: 26.125rem;
+    margin-bottom: 2rem;
+  }
+}
 
 .reviews__item {
   position: absolute;
