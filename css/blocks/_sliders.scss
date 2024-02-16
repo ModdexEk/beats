@@ -28,7 +28,7 @@
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(0, -100%);
     @include tablets {
         width: 80%;
         left: 50%;

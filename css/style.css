@@ -1130,8 +1130,8 @@ img {
   position: absolute;
   left: 0;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
   z-index: 10;
 }
 @media screen and (max-width: 768px) {
