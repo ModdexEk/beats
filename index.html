@@ -261,7 +261,7 @@
                 <div class="container">
                     <div class="team">
                        <h2 class="section__title team__title">Команда</h2>
-                       <ul class="team__list">
+                       <ul class="team__list team__list--desktop">
                         <li class="team__item">
                             <div class="team-card">
                                 <div class="team-card__photo">
@@ -269,8 +269,10 @@
                                 </div>
                                 <button class="team-card__name">Борис Федорович</button>
                                 <div class="team-card__value">
-                                    <div class="team-card__post">Главный технолог</div>
-                                    <div class="team-card__charge">Отвечает за вкусовые качества и калорийность.</div>
+                                    <div class="team-card__content"> 
+                                        <div class="team-card__post">Главный технолог</div>
+                                        <div class="team-card__charge">Отвечает за вкусовые качества и калорийность.</div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -281,8 +283,10 @@
                                 </div>
                                 <button class="team-card__name">Алла Иванова</button>
                                 <div class="team-card__value">
-                                    <div class="team-card__post">Специалист по упаковке</div>
-                                    <div class="team-card__charge">Автор запоминающегося стиля</div>
+                                    <div class="team-card__content">
+                                        <div class="team-card__post">Специалист по упаковке</div>
+                                        <div class="team-card__charge">Автор запоминающегося стиля</div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -293,8 +297,10 @@
                                 </div>
                                 <button class="team-card__name">Кирилл Матросов</button>
                                 <div class="team-card__value">
-                                    <div class="team-card__post">Оператор</div>
-                                    <div class="team-card__charge">Разработал дизайн наушников beats solo 3.</div>
+                                    <div class="team-card__content">
+                                        <div class="team-card__post">Оператор</div>
+                                        <div class="team-card__charge">Разработал дизайн наушников beats solo 3.</div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -305,11 +311,72 @@
                                 </div>
                                 <button class="team-card__name">Мила Рыжкова</button>
                                 <div class="team-card__value">
-                                    <div class="team-card__post">PR, маркетинг</div>
-                                    <div class="team-card__charge">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+                                    <div class="team-card__content">
+                                        <div class="team-card__post">PR, маркетинг</div>
+                                        <div class="team-card__charge">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+                                    </div>
                                 </div>
                             </div>
                         </li>
+                       </ul>
+                       <ul class="team__list team__list--mobile">
+                        <li class="team__item">
+                            <div class="team-card">
+                                <button class="team-card__name">Борис Федорович</button>
+                                <div class="team-card__value">
+                                    <div class="team-card__content">
+                                        <div class="team-card__photo">
+                                            <img src="./img/avatars/team-1.png" alt="Фото" class="team-card__img">
+                                        </div> 
+                                        <div class="team-card__post">Главный технолог</div>
+                                        <div class="team-card__charge">Отвечает за вкусовые качества и калорийность.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team-card">
+                                <button class="team-card__name">Алла Иванова</button>
+                                <div class="team-card__value">
+                                    <div class="team-card__content">
+                                        <div class="team-card__photo">
+                                            <img src="./img/avatars/team-2.png" alt="Фото" class="team-card__img">
+                                        </div> 
+                                        <div class="team-card__post">Специалист по упаковке</div>
+                                        <div class="team-card__charge">Автор запоминающегося стиля</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team-card">
+                                <button class="team-card__name">Кирилл Матросов</button>
+                                <div class="team-card__value">
+                                    <div class="team-card__content">
+                                        <div class="team-card__photo">
+                                            <img src="./img/avatars/team-3.png" alt="Фото" class="team-card__img">
+                                        </div> 
+                                        <div class="team-card__post">Оператор</div>
+                                        <div class="team-card__charge">Разработал дизайн наушников beats solo 3.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team-card">
+                                <button class="team-card__name">Мила Рыжкова</button>
+                                <div class="team-card__value">
+                                    <div class="team-card__content">
+                                        <div class="team-card__photo">
+                                            <img src="./img/avatars/team-4.png" alt="Фото" class="team-card__img">
+                                        </div> 
+                                        <div class="team-card__post">PR, маркетинг</div>
+                                        <div class="team-card__charge">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
                        </ul>
                     </div>
                 </div>
@@ -574,5 +641,7 @@
      crossorigin="anonymous"></script>
     <script src="./js/overlay.js"></script>
     <script src="./js/switcher.js"></script>
+    <script src="./js/team.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>
