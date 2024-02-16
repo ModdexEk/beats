@@ -1095,6 +1095,13 @@ img {
   background: #f5f5f5;
 }
 
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .sliders__container {
   max-width: 62.5rem;
   text-align: center;
@@ -1125,6 +1132,7 @@ img {
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  z-index: 10;
 }
 @media screen and (max-width: 768px) {
   .sliders__nav {
@@ -1154,6 +1162,11 @@ img {
 .sliders {
   max-width: 58.75rem;
 }
+@media screen and (max-width: 768px) {
+  .sliders {
+    max-width: 100%;
+  }
+}
 
 .sliders__item {
   display: -webkit-box;
@@ -1162,6 +1175,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .sliders__item {
@@ -1195,6 +1211,16 @@ img {
 
 .sliders__desk {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sliders__desc-icon {
@@ -1242,7 +1268,8 @@ img {
 @media screen and (max-width: 768px) {
   .sliders__info {
     width: 100%;
-    padding: 0 1.875rem;
+    text-align: center;
+    padding: 0 3.125rem;
   }
 }
 
