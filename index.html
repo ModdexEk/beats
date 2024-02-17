@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/layout/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Beats</title>
 </head>
@@ -721,14 +723,26 @@
           </nav>
         </div>
     </div>
+    <div id="modal" class="modal">
+        <div class="container modal__container">
+            <div class="modal__content">
+                Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+                <button class="button button__form">Закрыть</button>
+            </div>
+        </div>
+    </div>
     <script
      src="https://code.jquery.com/jquery-3.7.1.min.js"
      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="./js/overlay.js"></script>
     <script src="./js/switcher.js"></script>
     <script src="./js/team.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

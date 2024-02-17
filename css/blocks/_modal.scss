@@ -1,0 +1,29 @@
+.modal {
+    height: 100vh;
+    min-height: rem(650px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #333537;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.modal__container {
+   background: #fff; 
+   width: rem(310px);
+   height: rem(176px);
+   text-align: center;
+   padding: 0;
+}
+
+.modal__content {
+    color: #000;
+    font-size: rem(18px);
+    margin-top: rem(37px);
+    margin-bottom: rem(18px);
+}
