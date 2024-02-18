@@ -51,7 +51,7 @@
     padding: 0 rem(10px);
     position: relative;
     @include tablets {
-        position: none;
+        //position: none;
     }
     
 }
@@ -92,7 +92,7 @@
     top: 100%;
     @include tablets {
         position: static;
-        margin-bottom: rem(20px);
+        margin-bottom: rem(10px);
     }
 }
 
@@ -110,4 +110,5 @@
 
 .team-card__charge {
     color: #666;
+
 }
