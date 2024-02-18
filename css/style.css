@@ -1473,12 +1473,16 @@ img {
           justify-content: center;
 }
 .team__list--desktop {
-  overflow: hidden;
   height: 100%;
 }
 .team__list--mobile {
   overflow: hidden;
   height: 0;
+}
+@media screen and (max-width: 768px) {
+  .team__list--mobile {
+    overflow: visible;
+  }
 }
 @media screen and (max-width: 768px) {
   .team__list {
@@ -1491,6 +1495,7 @@ img {
             align-items: center;
   }
   .team__list--desktop {
+    overflow: hidden;
     height: 0;
   }
   .team__list--mobile {
@@ -1526,6 +1531,12 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 0.625rem;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .team-card {
+    position: none;
+  }
 }
 
 .team-card__photo {
@@ -1559,6 +1570,14 @@ img {
   height: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  position: absolute;
+  top: 100%;
+}
+@media screen and (max-width: 768px) {
+  .team-card__value {
+    position: static;
+    margin-bottom: 1.25rem;
+  }
 }
 
 .team-card__content {
@@ -1566,8 +1585,13 @@ img {
 }
 
 .team-card__post {
-  color: #000;
+  color: #292929;
   margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .team-card__post {
+    font-weight: 700;
+  }
 }
 
 .team-card__charge {

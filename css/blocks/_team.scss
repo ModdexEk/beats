@@ -7,17 +7,20 @@
     display: flex;
     justify-content: center;
     &--desktop {
-        overflow: hidden;
         height: 100%;
     }
    &--mobile {
         overflow: hidden;
         height: 0;
+        @include tablets {
+            overflow: visible;
+        }
     }
     @include tablets {
         flex-direction: column;
         align-items: center;
         &--desktop {
+            overflow: hidden;
             height: 0;
         }
        &--mobile {
@@ -46,7 +49,10 @@
     justify-content: center;
     align-items: center;
     padding: 0 rem(10px);
-    
+    position: relative;
+    @include tablets {
+        position: none;
+    }
     
 }
 
@@ -71,7 +77,7 @@
         border: 6px solid transparent;
         border-top: 9px solid #E01F3D;
         border-bottom: none;
-        margin-left: 0.3125rem;
+        margin-left: rem(5px);
     }
 
 }
@@ -82,6 +88,12 @@
     overflow: hidden;
     height: 0;
     transition: .5s;
+    position: absolute;
+    top: 100%;
+    @include tablets {
+        position: static;
+        margin-bottom: rem(20px);
+    }
 }
 
 .team-card__content {
@@ -89,8 +101,11 @@
 }
 
 .team-card__post {
-    color: #000;
+    color: #292929;
     margin-bottom: 5px;
+    @include tablets {
+        font-weight: 700;
+    }
 }
 
 .team-card__charge {
