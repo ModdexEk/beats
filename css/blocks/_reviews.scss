@@ -9,6 +9,7 @@
     overflow: hidden;
     position: relative;
 
+
     @include tablets {
         margin-bottom: rem(25px);
     }
@@ -42,6 +43,7 @@
 .reviews__item {
     position: absolute;
     opacity: 0;
+    transition: .5s;
 }
 
 .activ {

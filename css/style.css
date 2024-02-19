@@ -536,6 +536,8 @@ img {
 .reviews__item {
   position: absolute;
   opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .activ {
@@ -1512,8 +1514,10 @@ img {
   }
 }
 .team__item.active .team-card__name::after {
-  border-bottom: 9px solid #E01F3D;
-  border-top: none;
+  /* border-bottom: 9px solid #E01F3D;
+  border-top: none; */
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .team-card {
@@ -1533,6 +1537,7 @@ img {
   padding: 0 0.625rem;
   position: relative;
 }
+
 .team-card__photo {
   width: 100%;
   max-height: 18.125rem;
@@ -1556,6 +1561,8 @@ img {
   border-top: 9px solid #E01F3D;
   border-bottom: none;
   margin-left: 0.3125rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .team-card__value {
