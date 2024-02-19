@@ -1663,3 +1663,105 @@ img {
 .error-modal {
   color: #E01F3D;
 }
+
+.colors-section {
+  background: url(../img/colors.jpg) center center/cover no-repeat;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+.colors__title {
+  text-align: left;
+  padding-top: 8%;
+  padding-left: 8%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+}
+
+.colors__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.colors__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer;
+}
+.colors__item.active .colors__desc {
+  max-width: 524px;
+}
+
+.colors__name {
+  width: 6.375rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.colors__name--gray {
+  background: #999999;
+}
+.colors__name--black {
+  background: #151515;
+}
+.colors__name--red {
+  background: #E01F3C;
+}
+
+.colors__name-title {
+  color: #ffffff;
+  -webkit-transform: rotate(-90deg) translateY(100%);
+          transform: rotate(-90deg) translateY(100%);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  white-space: nowrap;
+  padding-top: 1.9375rem;
+  padding-left: 2.1875rem;
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.colors__desc {
+  height: 100%;
+  max-width: 0;
+  overflow: hidden;
+  background: #333537E5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.colors__text {
+  padding: 1.875rem 3.125rem;
+  line-height: 1.5;
+}

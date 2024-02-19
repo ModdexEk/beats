@@ -1,0 +1,85 @@
+.colors-section {
+    background: url(../img/colors.jpg) center center/cover no-repeat;
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.colors {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.colors__title {
+    text-align: left;
+    padding-top: 8%;
+    padding-left: 8%;
+    flex: 1 0 30%;
+}
+
+.colors__list {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.colors__item {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    &.active {
+        .colors__desc {
+            max-width: 524px; 
+        } 
+
+    }
+}
+
+.colors__name {
+    width: rem(102px);
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    &--gray {
+        background:#999999;
+    }
+    &--black {
+        background: #151515;
+    }
+    &--red {
+        background: #E01F3C;
+
+    }
+   
+}
+
+.colors__name-title {
+    color: #ffffff;
+    transform: rotate(-90deg) translateY(100%);
+    transform-origin: 0 100%;
+    white-space: nowrap;
+    padding-top: rem(31px);
+    padding-left: rem(35px);
+    font-weight: 700;
+    font-size: rem(36px);
+    line-height: 1;
+}
+
+.colors__desc {
+    height: 100%;
+    max-width: 0;
+    overflow: hidden;
+    background: #333537E5;
+    transition: all .5s;
+}
+
+.colors__text {
+    padding: rem(30px) rem(50px);
+    line-height: 1.5;
+}
