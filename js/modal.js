@@ -8,7 +8,6 @@ const validateFields = (form, fieldArray) => {
     });
 
     const errorFields = form.find(".input-error");
-
     return errorFields.length == 0;
 }
 
@@ -20,7 +19,6 @@ $(".form").submit(e=> {
     const phone = form.find("[name='phone']");
     const comment = form.find("[name='comment']");
     const to = form.find("[name='to']");
-
     const modal = $("#modal");
     const content = modal.find(".modal__content");
 
@@ -41,8 +39,13 @@ $(".form").submit(e=> {
                 to: to.val(),
             },
         });
+
+
+
         request.done(data => {
             content.text(data.message);
+            $('#myForm')[0].reset();
+            
         }); 
         request.fail(data => {
             const message = data.responseJSON.message;
@@ -63,8 +66,9 @@ $(".form").submit(e=> {
     
 });
 
+
 $(".js-button").click(e => {
     e.preventDefault();
-
     Fancybox.close();
+
 })
