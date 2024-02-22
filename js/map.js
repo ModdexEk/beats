@@ -15,10 +15,26 @@ async function initMap() {
             }
         } );
 
+
+
     map.addChild(new YMapDefaultSchemeLayer());
     /* map.behaviors.disable('scrollZoom'); */
 }
+const markerElement = document.createElement('div');
+markerElement.className = 'marker-class';
+markerElement.innerText = "I'm marker!";
 
+const marker = new YMapMarker(
+  {
+    source: '<p>Nhfkfkf</>',
+    coordinates: [56.827189, 60.585449],
+    draggable: true,
+    mapFollowsOnDrag: true
+  },
+  markerElement
+);
+
+map.addChild(marker);
 
 /* const init = () => {
     myMap = new ymap.Map("map", {
