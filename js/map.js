@@ -1,6 +1,26 @@
-/* let myMap;
+initMap();
 
-const init = () => {
+async function initMap() {
+    await ymaps3.ready;
+
+    const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+
+    const map = new YMap(
+        document.getElementById('map'),
+        {
+            location: {
+                center: [60.615424, 56.829406],
+                zoom: 12,
+                controls: [],
+            }
+        } );
+
+    map.addChild(new YMapDefaultSchemeLayer());
+    /* map.behaviors.disable('scrollZoom'); */
+}
+
+
+/* const init = () => {
     myMap = new ymap.Map("map", {
         center: [55.76, 37.64],
         zoom: 7
@@ -8,12 +28,12 @@ const init = () => {
 }
 
 ymaps.ready(init);
-
  */
 
 
 
 
+/* 
 initMap();
 
 async function initMap() {
@@ -41,4 +61,4 @@ async function initMap() {
 
     // Добавляем слой для отображения схематической карты
     map.addChild(new YMapDefaultSchemeLayer());
-}
+} */
