@@ -8,9 +8,9 @@
 }
 
 .colors {
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
+    //display: flex;
+    /*height: 100%;
+    justify-content: space-between; */
     color: #fff;
 }
 
@@ -18,7 +18,8 @@
     text-align: left;
     padding-top: 8%;
     padding-left: 8%;
-    flex: 1 0 30%;
+    margin-bottom: 0;
+   // flex: 1 0 30%;
 }
 
 .colors__list {
@@ -31,11 +32,18 @@
 
 .colors__item {
     display: flex;
-    align-items: flex-end;
+    //align-items: flex-end;
     cursor: pointer;
     &.active {
         .colors__desc {
-            max-width: 524px; 
+            width: rem(524px);
+            @include tablets {
+                    width: calc(100vw - rem(306px));      
+            }
+            @include phones {
+                width: calc(100vw - rem(270px));      
+            }
+
         } 
 
     }
@@ -56,6 +64,9 @@
         background: #E01F3C;
 
     }
+    @include phones {
+        width: rem(90px);      
+}
    
 }
 
@@ -73,7 +84,7 @@
 
 .colors__desc {
     height: 100%;
-    max-width: 0;
+    width: 0;  
     overflow: hidden;
     background: #333537E5;
     transition: all .5s;
@@ -82,4 +93,9 @@
 .colors__text {
     padding: rem(30px) rem(50px);
     line-height: 1.5;
+    @include phones {
+        width: calc(100vw - rem(270px));
+        padding: rem(30px) rem(10px);
+        line-height: 1.5;     
+}
 }

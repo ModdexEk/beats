@@ -1676,13 +1676,8 @@ img {
 }
 
 .colors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  /*height: 100%;
+  justify-content: space-between; */
   color: #fff;
 }
 
@@ -1690,9 +1685,7 @@ img {
   text-align: left;
   padding-top: 8%;
   padding-left: 8%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 30%;
-          flex: 1 0 30%;
+  margin-bottom: 0;
 }
 
 .colors__list {
@@ -1709,13 +1702,20 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   cursor: pointer;
 }
 .colors__item.active .colors__desc {
-  max-width: 524px;
+  width: 32.75rem;
+}
+@media screen and (max-width: 768px) {
+  .colors__item.active .colors__desc {
+    width: calc(100vw - 19.125rem);
+  }
+}
+@media screen and (max-width: 480px) {
+  .colors__item.active .colors__desc {
+    width: calc(100vw - 16.875rem);
+  }
 }
 
 .colors__name {
@@ -1737,6 +1737,11 @@ img {
 .colors__name--red {
   background: #E01F3C;
 }
+@media screen and (max-width: 480px) {
+  .colors__name {
+    width: 5.625rem;
+  }
+}
 
 .colors__name-title {
   color: #ffffff;
@@ -1754,9 +1759,9 @@ img {
 
 .colors__desc {
   height: 100%;
-  max-width: 0;
+  width: 0;
   overflow: hidden;
-  background: #333537E5;
+  background: rgba(51, 53, 55, 0.8980392157);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1764,4 +1769,11 @@ img {
 .colors__text {
   padding: 1.875rem 3.125rem;
   line-height: 1.5;
+}
+@media screen and (max-width: 480px) {
+  .colors__text {
+    width: calc(100vw - 16.875rem);
+    padding: 1.875rem 0.625rem;
+    line-height: 1.5;
+  }
 }
