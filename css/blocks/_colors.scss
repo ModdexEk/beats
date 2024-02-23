@@ -91,11 +91,15 @@
 }
 
 .colors__text {
+    width: rem(524px);
     padding: rem(30px) rem(50px);
     line-height: 1.5;
+    @include tablets {
+        width: calc(100vw - rem(306px));
+    }
     @include phones {
         width: calc(100vw - rem(270px));
         padding: rem(30px) rem(10px);
-        line-height: 1.5;     
+        line-height: 1.2;     
 }
 }

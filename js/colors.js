@@ -21,15 +21,6 @@ $(".colors__name").on("click", e=> {
 
 
 
-
-
-
-
-
-
-
-
-
 const colorsName = document.querySelectorAll('.colors__name');
 const colorsList = document.querySelector('.colors__list');
 

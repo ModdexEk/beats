@@ -1767,13 +1767,19 @@ img {
 }
 
 .colors__text {
+  width: 32.75rem;
   padding: 1.875rem 3.125rem;
   line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .colors__text {
+    width: calc(100vw - 19.125rem);
+  }
 }
 @media screen and (max-width: 480px) {
   .colors__text {
     width: calc(100vw - 16.875rem);
     padding: 1.875rem 0.625rem;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 }
