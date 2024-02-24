@@ -3,6 +3,9 @@ const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu__item");
 
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
 let inScroll = false;
 
 sections.first().addClass("active");
@@ -107,6 +110,8 @@ $(window).on("keydown", e => {
         }
 });
 
+$(".wrapper").one("touchmove", e => e.preventDefault());
+
 $("[data-scroll-to]").click(e => {
     e.preventDefault();
 
@@ -117,9 +122,9 @@ $("[data-scroll-to]").click(e => {
     performTransition(reqSection.index());
 });
 
-
+if (isMobile) {
 //https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
-$("body").swipe( {
+  $("body").swipe( {
     swipe:function(
         event,
         direction,
@@ -133,3 +138,6 @@ $("body").swipe( {
       scroller[scrollDirection]();
     },
   });
+}
+
+
