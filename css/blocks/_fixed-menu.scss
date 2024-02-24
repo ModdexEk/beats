@@ -2,6 +2,13 @@
    position: fixed; 
    top: 30%;
    right: 3%;
+   &--black {
+    .fixed-menu__link {
+      &:before {
+        background: #fff;
+      }
+    }
+   }
 
    @include tablets {
     display: none;
@@ -32,6 +39,11 @@
     border: 1px solid transparent;
     display: block;
     position: relative;
+    &:hover {
+      &:before {
+        background: #E01F3D;
+      }
+    }
 
     &:before {
         content: "";

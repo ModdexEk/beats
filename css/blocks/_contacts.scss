@@ -1,7 +1,7 @@
 .contacts__container {
     padding: 0; 
     width: 100%;
-    position: relative;
+    //position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,6 +16,7 @@
 .contacts-section {
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 
 .map {
