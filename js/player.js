@@ -22,7 +22,7 @@ let eventsInit = () => {
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
     height: '370',
-    width: '660',
+    width: '100%',
     videoId: '7jy8CJTCY-8',
     playerVars: {
     'playsinline': 1

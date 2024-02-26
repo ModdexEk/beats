@@ -1824,7 +1824,7 @@ button {
 }
 
 .player__elem {
-  width: 660px;
+  max-width: 660px;
   height: 370px;
 }
 
