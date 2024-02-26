@@ -1,4 +1,74 @@
-$('.video__player').height($('.video__player').width()/(16/9));
+let player;
+const playerContainer = $(".player");
+const playerStart = $(".player__start")
+ 
+let eventsInit = () => {
+    $(".player__start").click(e => {
+      e.preventDefault();
+    
+      if (playerContainer.hasClass("paused")) {
+        playerContainer.removeClass("paused");
+        playerStart.removeClass("player__start-pause");
+        player.pauseVideo();
+      } else {
+        playerContainer.addClass("paused");
+        playerStart.addClass("player__start-pause");
+        player.playVideo();
+      }
+    });
+   }
+
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('yt-player', {
+    height: '370',
+    width: '660',
+    videoId: '7jy8CJTCY-8',
+    playerVars: {
+    'playsinline': 1
+    },
+    events: {
+   // onReady: onPlayerReady
+    //'onStateChange': onPlayerStateChange
+    },
+    playerVars: {
+        controls: 0,
+        disablekb:0,
+        showinfo: 0,
+        rel: 0,
+        autoplay: 0,
+        modestbranding: 0
+    }
+  });
+}
+
+eventsInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* $('.video__player').height($('.video__player').width()/(16/9));
 	
 	
 $(window).resize(function(){
@@ -112,7 +182,7 @@ const onPlayerReady = () => {
      }, 1);
 }
 
-const onPlayerStateChange = event => {
+const onPlayerStateChange = event => { */
     /*
       -1 (воспроизведение видео не начато)
       0 (воспроизведение видео завершено)
@@ -121,7 +191,7 @@ const onPlayerStateChange = event => {
       3 (буферизация)
       5 (видео подают реплики).
     */
-    switch (event.data) {
+/*     switch (event.data) {
       case 1:
          playerContainer.addClass("active");
          playerContainer.addClass("paused");
@@ -155,3 +225,4 @@ function onYouTubeIframeAPIReady() {
 }
 
 eventsInit();
+ */
