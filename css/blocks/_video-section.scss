@@ -1,0 +1,9 @@
+.video-section {
+    position: relative;
+    &:before {
+        content: url(../img/ellipse.png);
+        position: absolute;
+        top: -18px;
+        left: 15%;
+       }
+}

@@ -1,78 +1,8 @@
-let player;
-const playerContainer = $(".player");
-const playerStart = $(".player__start")
- 
-let eventsInit = () => {
-    $(".player__start").click(e => {
-      e.preventDefault();
-    
-      if (playerContainer.hasClass("paused")) {
-        playerContainer.removeClass("paused");
-        playerStart.removeClass("player__start-pause");
-        player.pauseVideo();
-      } else {
-        playerContainer.addClass("paused");
-        playerStart.addClass("player__start-pause");
-        player.playVideo();
-      }
-    });
-   }
-
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('yt-player', {
-    height: '370',
-    width: '100%',
-    videoId: '7jy8CJTCY-8',
-    playerVars: {
-    'playsinline': 1
-    },
-    events: {
-   // onReady: onPlayerReady
-    //'onStateChange': onPlayerStateChange
-    },
-    playerVars: {
-        controls: 0,
-        disablekb:0,
-        showinfo: 0,
-        rel: 0,
-        autoplay: 0,
-        modestbranding: 0
-    }
-  });
-}
-
-eventsInit();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* $('.video__player').height($('.video__player').width()/(16/9));
+$('.work__player').height($('.work__player').width()/(16/9));
 	
 	
 $(window).resize(function(){
-    $('.video__player').height($('.video__player').width()/(16/9));
+    $('.work__player').height($('.work__player').width()/(16/9));
 });
 
 let player;
@@ -143,8 +73,6 @@ $('.player__volume-track').click(e => {
         });
   
     player.setVolume(newVolumePosSec);
-
-    console.log(newVolumePosSec);
 })
 
 
@@ -182,16 +110,9 @@ const onPlayerReady = () => {
      }, 1);
 }
 
-const onPlayerStateChange = event => { */
-    /*
-      -1 (воспроизведение видео не начато)
-      0 (воспроизведение видео завершено)
-      1 (воспроизведение)
-      2 (пауза)
-      3 (буферизация)
-      5 (видео подают реплики).
-    */
-/*     switch (event.data) {
+const onPlayerStateChange = event => {
+
+    switch (event.data) {
       case 1:
          playerContainer.addClass("active");
          playerContainer.addClass("paused");
@@ -208,7 +129,7 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         height: '100%',
         width: '100%',
-        videoId: '1_f3RcyYdfA',
+        videoId: '7jy8CJTCY-8',
         events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -225,4 +146,3 @@ function onYouTubeIframeAPIReady() {
 }
 
 eventsInit();
- */

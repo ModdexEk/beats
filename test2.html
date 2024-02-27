@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/layout/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Beats</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="maincontent">
+
+            <section class="section" data-section="work">
+				<div class="container">
+					<div class="work">
+						<h2 class="work__title title">как мы работаем</h2>
+						<div class="work__player">
+							<div class="player">
+								<div class="player__display">
+									<div class="player__youtube" id="player" async></div>
+									<div class="player__splash">
+										<button class="player__splash-btn"></button>
+									</div>
+								</div>
+								<div class="player__controls">
+									<button class="player__play"></button>
+									<div class="player__nav">
+										<div class="player__track">
+											<div class="player__track-cur"></div>
+											<button class="player__slider"></button>
+										</div>
+									</div>
+									<div class="player__volume">
+										<button class="player__volume-icon"></button>
+										<div class="player__volume-track">
+											<div class="player__volume-cur"></div>
+											<button class="player__volume-btn"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+        </div>
+    </div>
+    <script
+     src="https://code.jquery.com/jquery-3.7.1.min.js"
+     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+     crossorigin="anonymous"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/playertest.js"></script>
+</body>
+</html>
