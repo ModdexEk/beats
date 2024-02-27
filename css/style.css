@@ -76,7 +76,7 @@ img {
 
 .preview {
   background: url(../img/beats.png) left 75% center no-repeat;
-  height: 100vh;
+  height: 100%;
   min-height: 40.625rem;
 }
 @media screen and (max-width: 768px) {
@@ -294,7 +294,6 @@ img {
 
 button {
   border: none;
-  background: none;
   cursor: pointer;
 }
 
@@ -1724,12 +1723,12 @@ button {
 }
 @media screen and (max-width: 768px) {
   .colors__item.active .colors__desc {
-    width: calc(100vw - rem(306px));
+    width: calc(100vw - 19.125rem);
   }
 }
 @media screen and (max-width: 480px) {
   .colors__item.active .colors__desc {
-    width: calc(100vw - rem(270px));
+    width: calc(100vw - 16.875rem);
   }
 }
 
@@ -1776,7 +1775,7 @@ button {
   height: 100%;
   width: 0;
   overflow: hidden;
-  background: #333537E5;
+  background: rgba(51, 53, 55, 0.8980392157);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -1788,12 +1787,12 @@ button {
 }
 @media screen and (max-width: 768px) {
   .colors__text {
-    width: calc(100vw - rem(306px));
+    width: calc(100vw - 19.125rem);
   }
 }
 @media screen and (max-width: 480px) {
   .colors__text {
-    width: calc(100vw - rem(270px));
+    width: calc(100vw - 16.875rem);
     padding: 1.875rem 0.625rem;
     line-height: 1.2;
   }
