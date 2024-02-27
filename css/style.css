@@ -1828,7 +1828,7 @@ button {
   display: none;
 }
 .player.paused .player__play {
-  background-image: url("../../img/pause.svg");
+  background-image: url("../img/pause.svg");
 }
 
 .player__display {
@@ -1851,13 +1851,13 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("../../img/splash.jpg") center center/100% no-repeat;
+  background: url("../img/splash.jpg") center center/100% no-repeat;
 }
 
 .player__splash-btn {
   width: 48px;
   height: 70px;
-  background: url("../../img/play.svg") center center/100% no-repeat;
+  background: url("../img/play.svg") center center/100% no-repeat;
 }
 
 .player__controls {
@@ -1890,7 +1890,7 @@ button {
 }
 
 .player__play {
-  background: url("../../img/play.svg") center center/100% no-repeat;
+  background: url("../img/play.svg") center center/100% no-repeat;
   width: 11px;
   height: 16px;
   margin-right: 30px;
@@ -1967,16 +1967,11 @@ button {
 .player__volume-icon {
   width: 13px;
   height: 16px;
-  background: url("../../img/volume.svg") center center/contain no-repeat;
+  background: url("../img/volume.svg") center center/contain no-repeat;
   margin-right: 15px;
 }
 @media screen and (max-width: 768px) {
   .player__volume-icon {
     margin-right: 10px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .player__volume-icon {
-    margin-right: 5px;
   }
 }
